@@ -12,10 +12,12 @@ Building opencv.js with Docker (based on [https://github.com/opencv/opencv/tree/
     docker build -t build-opencv-js .
     docker run --rm -v  ${PWD}/opencv-${OPENCV_VERSION}":/app/opencv build-opencv-js
     ```
-If compilation is successful, resulted file   will be located at opencv-${OPENCV_VERSION}/compiled/bin/opencv.js
+If compilation is successful, the resulted file is located at opencv-${OPENCV_VERSION}/compiled/bin/opencv.js
 
-If you want lately use compiled file as npm package:
-```cp package.json opencv-${OPENCV_VERSION}/compiled/bin/```
+If you want lately to use compiled file as npm package:
+```
+cp package.json opencv-${OPENCV_VERSION}/compiled/bin/
+```
 ## For reducing number of compiled components:
 Change **opencv_js.config.py** file and provide desired modules in **white_list** variable at the end of file.
 (for now `[core, imgproc, objdetect, video, dnn, features2d, photo, aruco, calib3d]` are compiled)
