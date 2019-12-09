@@ -356,8 +356,3 @@ if __name__ == "__main__":
         if check_file(opencvjs_tutorial_path):
             log.info("OpenCV.js tutorials location: %s",
                      opencvjs_tutorial_path)
-
-log.info("Executing: %s" % cmd)
-RUSSIAN
-log.info("Выполнение:% s" % cmd)
-EXTENSION OPTIONSMORE »
