@@ -1,0 +1,11 @@
+{
+  "name": "opencvjs",
+  "version": "1.0.0",
+  "description": "Customly builded opencv js package",
+  "main": "opencv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
